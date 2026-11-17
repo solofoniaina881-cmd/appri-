@@ -5,6 +5,14 @@
 {% block body %}
     <!-- navbar -->    
     {% include 'components/navbar.html.twig' %}
+      <header class="page-header">
+        <div class="container">
+            <h1 class="mb-3">Informations et ressources</h1>
+            <div class="breadcrumb-custom">
+                <a href="{{('app_home')}}">Maison</a> <span>/</span> <span class="active">Blog</span>
+            </div>
+        </div>
+    </header>
 
     {% include 'components/footpage.html.twig' %}
 {% endblock %}
