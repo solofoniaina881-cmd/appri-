@@ -5,6 +5,95 @@
 {% block body %}
     <!-- navbar -->    
     {% include 'components/navbar.html.twig' %}
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+        <h1 class="mb-3">À propos d'Appri+.Trek</h1>
+        <div class="breadcrumb-custom">
+            <a href="{{path('app_home')}}">Home</a> <span>/</span> <span class="active">À propos</span>
+        </div>
+        </div>
+    </header>
 
+    <!-- STORY -->
+    <section class="section">
+        <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 reveal">
+                            <div id="trekCarousel" class="carousel slide carousel-fade"
+                    data-bs-ride="carousel" data-bs-interval="4000">
+
+                    <div class="carousel-inner rounded-4">
+
+                        <div class="carousel-item active">
+                            <img src="https://images.openai.com/static-rsc-4/_oUQha2_M-OlGvr2rsfe5Nc07YXAyN2eqsPU94_mLoWYx5udwPMGjFyrMyEkoNBW0EK17CCFWZ0fvmQjGIZhuBksAUkgzsSEUYL7STznN7EkYCdnHRIoUuax79rdn9b-pos7fqrrdUrHSY7TUnjqFF4ExqSq_GfOq3n2xYe6ADrVtWBJ9f3UL5NiufzFDXht?purpose=fullsize" class="rounded-img w-100" alt="Nexora studio workspace" style="aspect-ratio:5/4; object-fit:cover;"
+                                class="d-block w-100"
+                                style="aspect-ratio: 5/4; object-fit: cover;"
+                                alt="Madagascar">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://necvlggenujydiokngfg.supabase.co/storage/v1/object/public/nomadays-images/photos/b5127916-843f-4c60-b30c-3263448ba19d/content/754041e5-fd7d-4dcb-a2db-49106746c0a8/8e3ddd76-7cb3-4796-91d3-5f3bbad31271.jpg"
+                                class="d-block w-100"
+                                style="aspect-ratio: 5/4; object-fit: cover;"
+                                alt="Paysage naturel">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjSwTbDXLFi1OzMABxvq1aM1afV31ZydOjuLi9gghMSCF51faM2BN7B5AO&s=10"
+                                class="d-block w-100"
+                                style="aspect-ratio: 5/4; object-fit: cover;"
+                                alt="Paysage naturel">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9GEkvrCQrTa8oBdh5R3c7QqqTrjOG3ROeNh1p1PAz-8DjsjbkhaFDmxz&s=10"
+                                class="d-block w-100"
+                                style="aspect-ratio: 5/4; object-fit: cover;"
+                                alt="Trekking">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 reveal">
+            <span class="eyebrow">Notre histoire</span>
+            <h2 class="section-title">Fondée par des opérateurs, conçue pour les opérateurs</h2>
+            <p class="section-subtitle mb-3">Appri+.Trek est une plateforme web dédiée à la découverte et à la promotion du tourisme à Madagascar. Elle facilite la mise en relation entre voyageurs, guides touristiques et prestataires de services pour organiser des excursions et découvrir de nouvelles destinations. Notre objectif est de valoriser les richesses naturelles et culturelles de Madagascar tout en encourageant un tourisme local, responsable et durable.</p>
+            <p class="mb-4">Faciliter l'organisation des voyages et des activités touristiques tout en offrant une expérience simple, accessible et enrichissante à chaque utilisateur.</p>
+            <div class="row g-3">
+                <div class="col-6">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icon-box icon-box-primary"><i class="bi bi-calendar-check"></i></div>
+                    <div><strong class="text-navy d-block">Since 2014</strong><small class="text-slate">12 years operating</small></div>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icon-box icon-box-success"><i class="bi bi-globe"></i></div>
+                    <div><strong class="text-navy d-block">Remote-first</strong><small class="text-slate">Across 9 timezones</small></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>    
+    <!-- CTA -->
+    <section class="section pt-0">
+        <div class="container">
+        <div class="cta-section reveal">
+            <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="mb-2">Vous souhaitez travailler avec nous ?</h2>
+                <p class="mb-0 fs-5">Nous acceptons actuellement nouveaux partenaires pour le troisième trimestre 2027.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                <a href="{{path('app_home')}}" class="btn btn-primary btn-lg-custom">Entrer en contact <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
     {% include 'components/footpage.html.twig' %}
 {% endblock %}
